@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Philosopher", sans-serif;
+}
+
+.main-slider {
+  min-height: 300px;
+  background-image: url(./img/backgrond.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 58px 25px 64px 25px;
+}
+.main-slider__container {
+  width: 100%;
+  max-width: 1484px;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 8px;
+  border: 2px solid #D6B43F;
+  background-image: url(./img/background2.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.main-slider__container .star1 {
+  position: absolute;
+  top: -28px;
+  left: -21px;
+}
+.main-slider__container .star2 {
+  position: absolute;
+  top: -28px;
+  right: -21px;
+}
+.main-slider__container .star3 {
+  position: absolute;
+  bottom: -34px;
+  right: -21px;
+}
+.main-slider__container .star4 {
+  position: absolute;
+  bottom: -34px;
+  left: -21px;
+}
+.main-slider__container .bd_up {
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.main-slider__container .bg_down {
+  position: absolute;
+  bottom: -23px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.main-slider__container .bg_left {
+  position: absolute;
+  left: -18px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.main-slider__container .bg_right {
+  position: absolute;
+  right: -18px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.main-slider__container .main-slider__content {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+@media (max-width: 991px) {
+  .main-slider__container .main-slider__content {
+    grid-template-columns: 1fr;
+  }
+}
+.main-slider__container .main-slider__content .content-text {
+  padding: 53px 0 0 48px;
+  width: 100%;
+  max-width: 641px;
+}
+@media (max-width: 991px) {
+  .main-slider__container .main-slider__content .content-text {
+    padding: 53px 20px 0 20px;
+    max-width: 100%;
+  }
+}
+.main-slider__container .main-slider__content .content-text__title {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #F0D67E;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 29px;
+}
+.main-slider__container .main-slider__content .content-text .content-line {
+  height: 4px;
+  background: #987706;
+  margin-bottom: 26px;
+}
+.main-slider__container .main-slider__content .content-text p {
+  margin-bottom: 30px;
+  color: #F6F8FA;
+  line-height: 24px;
+}
+.main-slider__container .main-slider__content .content-text h4 {
+  color: #F6F8FA;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.main-slider__container .main-slider__content .content-image {
+  padding: 10px 16px 0 0;
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 991px) {
+  .main-slider__container .main-slider__content .content-image {
+    justify-content: center;
+  }
+}
+.main-slider__container .main-slider__content .content-image__wrapper {
+  width: 521px;
+  height: 522px;
+  position: relative;
+}
+@media (max-width: 991px) {
+  .main-slider__container .main-slider__content .content-image__wrapper {
+    height: 540px;
+  }
+}
+@media (max-width: 600px) {
+  .main-slider__container .main-slider__content .content-image__wrapper {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 320px) {
+  .main-slider__container .main-slider__content .content-image__wrapper {
+    width: 240px;
+    height: 240px;
+  }
+}
+.main-slider__container .main-slider__content .content-image__wrapper::before {
+  content: "";
+  position: absolute;
+  background: url(img/circle.png);
+  background-size: cover;
+  background-position: center center;
+  width: 450px;
+  height: 450px;
+  top: 62px;
+  left: 38px;
+}
+@media (max-width: 600px) {
+  .main-slider__container .main-slider__content .content-image__wrapper::before {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media (max-width: 320px) {
+  .main-slider__container .main-slider__content .content-image__wrapper::before {
+    width: 210px;
+    height: 180px;
+  }
+}
+.main-slider__container .main-slider__content .content-image__wrapper .content-image__image {
+  position: absolute;
+  z-index: 10;
+  top: 30px;
+  left: -12px;
+  max-width: 470px;
+  height: auto;
+}
+@media (max-width: 600px) {
+  .main-slider__container .main-slider__content .content-image__wrapper .content-image__image {
+    height: 250px;
+    top: 34px;
+    left: 35px;
+  }
+}
+@media (max-width: 320px) {
+  .main-slider__container .main-slider__content .content-image__wrapper .content-image__image {
+    height: 200px;
+  }
+}
+.main-slider__container .main-slider__content .content-image__wrapper .content-image__image img {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main-slider__container .main-slider__content .content-image__wrapper .content-image__image2 {
+  top: 30px;
+  left: 121px;
+}
+@media (max-width: 600px) {
+  .main-slider__container .main-slider__content .content-image__wrapper .content-image__image2 {
+    top: 30px;
+    left: 91px;
+  }
+}
+.main-slider__container .main-slider__content .content-image__wrapper .content-image__image3 {
+  top: 91px;
+  left: 132px;
+}
+@media (max-width: 600px) {
+  .main-slider__container .main-slider__content .content-image__wrapper .content-image__image3 {
+    top: 31px;
+    left: 83px;
+  }
+}
+.main-slider__container .main-btn-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.main-slider__container .main-btn-wrapper .main-btns {
+  width: 155px;
+  height: 155px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.main-slider__container .main-btn-wrapper .main-btns:active {
+  transform: scale(0.92);
+}
+.main-slider__container .main-btn-wrapper .main-btn1 {
+  background-image: url(img/btn/Property\ 1=1_Normal.png);
+}
+.main-slider__container .main-btn-wrapper .main-btn1.active {
+  background-image: url(img/btn/Property\ 1=1_Hover.png);
+}
+.main-slider__container .main-btn-wrapper .main-btn2 {
+  background-image: url(img/btn/Property\ 1=2_Normal.png);
+}
+.main-slider__container .main-btn-wrapper .main-btn2.active {
+  background-image: url(img/btn/Property\ 1=2_Hover.png);
+}
+.main-slider__container .main-btn-wrapper .main-btn3 {
+  background-image: url(img/btn/Property\ 1=3_Normal.png);
+}
+.main-slider__container .main-btn-wrapper .main-btn3.active {
+  background-image: url(img/btn/Property\ 1=3_Hover.png);
+}
+.main-slider__container .main-btn-wrapper .main-btn4 {
+  background-image: url(img/btn/Property\ 1=4_Normal.png);
+}
+.main-slider__container .main-btn-wrapper .main-btn4.active {
+  background-image: url(img/btn/Property\ 1=4_Hover.png);
+}
+.main-slider__container .main-btn-wrapper .main-btn5 {
+  background-image: url(img/btn/Property\ 1=5_Normal.png);
+}
+.main-slider__container .main-btn-wrapper .main-btn5.active {
+  background-image: url(img/btn/Property\ 1=5_Hover.png);
+}
+.main-slider__container .main-btn-wrapper .main-btn6 {
+  background-image: url(img/btn/Property\ 1=6_Normal.png);
+}
+.main-slider__container .main-btn-wrapper .main-btn6.active {
+  background-image: url(img/btn/Property\ 1=6_Hover.png);
+}
+.main-slider__container .main-btn-wrapper .main-btn7 {
+  background-image: url(img/btn/Property\ 1=7_Normal.png);
+}
+.main-slider__container .main-btn-wrapper .main-btn7.active {
+  background-image: url(img/btn/Property\ 1=7_Hover.png);
+}
+.main-slider__container .main-btn-wrapper .main-btn8 {
+  background-image: url(img/btn/Property\ 1=8_Normal.png);
+}
+.main-slider__container .main-btn-wrapper .main-btn8.active {
+  background-image: url(img/btn/Property\ 1=8_Hover.png);
+}
+.main-slider__container .main-btn-wrapper .main-btn9 {
+  background-image: url(img/btn/Property\ 1=9_Normal.png);
+}
+.main-slider__container .main-btn-wrapper .main-btn9.active {
+  background-image: url(img/btn/Property\ 1=9_Hover.png);
+}
+
+.main-line {
+  height: 86px;
+  background-image: url(img/span.line.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}/*# sourceMappingURL=style.css.map */
